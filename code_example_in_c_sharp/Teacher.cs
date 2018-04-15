@@ -6,12 +6,13 @@
         {
             
         }
-        private string firstName;
-        private string lastName;
-        private string subject;
+        protected string firstName;
+        protected string lastName;
+        protected string subject;
         private enum Position { assistant, seniorLecturer, associateProfessor, professor };
-        private int salary;
+        private int salary = 10000;
         private int scientificSupervisorofStudents;
+        private static string department = "ПИиКТ";
 
         public Teacher(string firstName, string lastName, string subject, int salary)
         {
@@ -36,9 +37,13 @@
             get { return lastName; }
         }
 
-        public string СonductsLecture()
+        public string InformationAboutTeacher()
         {
             return firstName + " " + lastName + ", " + "дисциплина: " + subject + ", оклад: " + salary + " рублей.";
+        }
+        public string AboutTeacher()
+        {
+            return firstName + " " + lastName + " " + department;
         }
     }
 }
