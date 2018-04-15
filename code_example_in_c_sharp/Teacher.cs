@@ -2,17 +2,18 @@
 {
     public class Teacher
     {
-        public Teacher()
-        {
-            
-        }
-        protected string firstName;
-        protected string lastName;
-        protected string subject;
+        private string firstName;
+        private string lastName;
+        private string subject;
         private enum Position { assistant, seniorLecturer, associateProfessor, professor };
         private int salary = 10000;
         private int scientificSupervisorofStudents;
         private static string department = "ПИиКТ";
+
+        public Teacher()
+        {
+
+        }
 
         public Teacher(string firstName, string lastName, string subject, int salary)
         {
@@ -37,11 +38,11 @@
             get { return lastName; }
         }
 
-        public string InformationAboutTeacher()
+        public string GetInfoFull()
         {
             return firstName + " " + lastName + ", " + "дисциплина: " + subject + ", оклад: " + salary + " рублей.";
         }
-        public string AboutTeacher()
+        public string GetInfo()
         {
             return firstName + " " + lastName + " " + department;
         }
