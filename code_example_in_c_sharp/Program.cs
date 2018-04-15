@@ -7,7 +7,8 @@ namespace code_example_in_c_sharp
         public static void Main(string[] args)
         {
             Teacher assistant = new Teacher("Илья", "Исаев", "тестирование программного обеспечения", 34000);
-            Console.Write(assistant.СonductsLecture());
+            Console.WriteLine(assistant.InformationAboutTeacher());
+            Console.WriteLine(assistant.AboutTeacher());
         }
     }
 }
