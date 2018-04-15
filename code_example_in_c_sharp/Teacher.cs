@@ -40,7 +40,7 @@
 
         public string GetInfoFull()
         {
-            return firstName + " " + lastName + ", " + department + ", "+ "дисциплина: " + subject + ", оклад: " + salary + " рублей.";
+            return firstName + " " + lastName + ", " + department + ", " + "дисциплина: " + subject + ", оклад: " + salary + " рублей.";
         }
         public string GetInfo()
         {
