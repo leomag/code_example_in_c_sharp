@@ -40,11 +40,11 @@
 
         public string GetInfoFull()
         {
-            return firstName + " " + lastName + ", " + "дисциплина: " + subject + ", оклад: " + salary + " рублей.";
+            return firstName + " " + lastName + ", " + department + ", "+ "дисциплина: " + subject + ", оклад: " + salary + " рублей.";
         }
         public string GetInfo()
         {
-            return firstName + " " + lastName + " " + department;
+            return firstName + " " + lastName + ", " + department;
         }
     }
 }
