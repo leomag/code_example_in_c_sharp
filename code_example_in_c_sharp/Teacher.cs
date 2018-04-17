@@ -38,7 +38,7 @@
             get { return lastName; }
         }
 
-        public string GetInfoFull()
+        private string GetInfoFull()
         {
             return firstName + " " + lastName + ", " + "дисциплина: " + subject + ", оклад: " + salary + " рублей.";
         }
